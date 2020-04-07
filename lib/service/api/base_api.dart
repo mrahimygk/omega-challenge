@@ -6,7 +6,6 @@ class BaseApi {
   static final String _baseUrl =
       "http://mayadin.tehran.ir/DesktopModules/TM_ArticleList/API";
 
-// /Article/GetList/2766
   final dio = Dio()..options.baseUrl = _baseUrl;
 
   Future<dynamic> get(String path, Map<String, dynamic> params) async {
