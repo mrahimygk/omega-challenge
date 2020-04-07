@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="">
+    <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="refactoring method name">
+      <change afterPath="$PROJECT_DIR$/lib/bloc/notification_bloc.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/service/repository/notification_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/service/repository/notification_repository.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -223,7 +222,42 @@
       <option name="project" value="LOCAL" />
       <updated>1586265446573</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="+methods specific for notif data">
+      <created>1586265745095</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1586265745095</updated>
+    </task>
+    <task id="LOCAL-00025" summary="+id to base repo interface">
+      <created>1586265933087</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1586265933087</updated>
+    </task>
+    <task id="LOCAL-00026" summary="implementing base methods">
+      <created>1586265955531</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1586265955531</updated>
+    </task>
+    <task id="LOCAL-00027" summary="-">
+      <created>1586265961923</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1586265961923</updated>
+    </task>
+    <task id="LOCAL-00028" summary="refactoring method name">
+      <created>1586266063966</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1586266063966</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +274,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initing a basic flutter project" />
     <MESSAGE value="removing comments" />
     <MESSAGE value="converting json data to dart file" />
     <MESSAGE value="+db and dio deps" />
@@ -252,7 +285,6 @@
     <MESSAGE value="+singleton db" />
     <MESSAGE value="+base dao" />
     <MESSAGE value="+dao to parse notification" />
-    <MESSAGE value="-" />
     <MESSAGE value="+api for notifications" />
     <MESSAGE value="+seen bool" />
     <MESSAGE value="+base repo" />
@@ -262,6 +294,11 @@
     <MESSAGE value="+method to get unseen data" />
     <MESSAGE value="+has seen to dao" />
     <MESSAGE value="changing fetch api response type" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing fetch api response type" />
+    <MESSAGE value="+methods specific for notif data" />
+    <MESSAGE value="+id to base repo interface" />
+    <MESSAGE value="implementing base methods" />
+    <MESSAGE value="-" />
+    <MESSAGE value="refactoring method name" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring method name" />
   </component>
 </project>
