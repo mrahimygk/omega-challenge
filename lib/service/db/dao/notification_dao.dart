@@ -35,7 +35,7 @@ class NotificationDao implements Dao<Notification> {
       '$notificationColVoteNumber text, '
       '$notificationColPoId text, '
       '$notificationColPortalId text, '
-      '$notificationHasSeen text, '
+      '$notificationHasSeen text '
       ')';
 
   @override
