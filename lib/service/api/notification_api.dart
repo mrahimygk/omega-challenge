@@ -5,7 +5,7 @@ import 'base_api.dart';
 class NotificationApi {
   final BaseApi api = BaseApi();
 
-  Future<ApiResponse> fetchAll(Map<String, dynamic> params) async {
+  Future fetchAll(Map<String, dynamic> params) async {
     return api.get(NOTIFICATIONS_URL, params);
   }
 }
