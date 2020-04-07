@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="" />
+    <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,14 +16,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aCTQRHAMzCYr4bSltN6cDRrCYa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/service" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/service/db/dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/service" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -41,6 +65,141 @@
       <option name="presentableId" value="Default" />
       <updated>1586238559662</updated>
     </task>
+    <task id="LOCAL-00001" summary="initing a basic flutter project">
+      <created>1586241746788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586241746788</updated>
+    </task>
+    <task id="LOCAL-00002" summary="removing comments">
+      <created>1586241999000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586241999000</updated>
+    </task>
+    <task id="LOCAL-00003" summary="converting json data to dart file">
+      <created>1586243113724</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586243113724</updated>
+    </task>
+    <task id="LOCAL-00004" summary="+db and dio deps">
+      <created>1586243208466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586243208466</updated>
+    </task>
+    <task id="LOCAL-00005" summary="+alert dialog">
+      <created>1586243232309</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586243232309</updated>
+    </task>
+    <task id="LOCAL-00006" summary="+base api">
+      <created>1586244119241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244119241</updated>
+    </task>
+    <task id="LOCAL-00007" summary="c+a+l">
+      <created>1586244130530</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244130530</updated>
+    </task>
+    <task id="LOCAL-00008" summary="+path">
+      <created>1586244139375</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244139375</updated>
+    </task>
+    <task id="LOCAL-00009" summary="removing named arguments">
+      <created>1586244154322</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244154322</updated>
+    </task>
+    <task id="LOCAL-00010" summary="+singleton db">
+      <created>1586244169251</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244169251</updated>
+    </task>
+    <task id="LOCAL-00011" summary="+base dao">
+      <created>1586244188014</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244188014</updated>
+    </task>
+    <task id="LOCAL-00012" summary="+dao to parse notification">
+      <created>1586244231783</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244231783</updated>
+    </task>
+    <task id="LOCAL-00013" summary="-">
+      <created>1586244371783</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244371783</updated>
+    </task>
+    <task id="LOCAL-00014" summary="+api for notifications">
+      <created>1586244421071</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244421071</updated>
+    </task>
+    <task id="LOCAL-00015" summary="+seen bool">
+      <created>1586244799014</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1586244799014</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initing a basic flutter project" />
+    <MESSAGE value="removing comments" />
+    <MESSAGE value="converting json data to dart file" />
+    <MESSAGE value="+db and dio deps" />
+    <MESSAGE value="+alert dialog" />
+    <MESSAGE value="+base api" />
+    <MESSAGE value="c+a+l" />
+    <MESSAGE value="+path" />
+    <MESSAGE value="removing named arguments" />
+    <MESSAGE value="+singleton db" />
+    <MESSAGE value="+base dao" />
+    <MESSAGE value="+dao to parse notification" />
+    <MESSAGE value="-" />
+    <MESSAGE value="+api for notifications" />
+    <MESSAGE value="+seen bool" />
+    <option name="LAST_COMMIT_MESSAGE" value="+seen bool" />
   </component>
 </project>
