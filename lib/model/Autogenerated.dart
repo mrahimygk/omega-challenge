@@ -63,7 +63,7 @@ class Notification {
   String portalId;
 
   Notification(
-      {this.articleId,
+      this.articleId,
       this.title,
       this.content,
       this.description,
@@ -93,7 +93,7 @@ class Notification {
       this.voteTotal,
       this.voteNumber,
       this.poId,
-      this.portalId});
+      this.portalId);
 
   Notification.fromJson(Map<String, dynamic> json) {
     articleId = json['ArticleId'];
