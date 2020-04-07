@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/service/repository/notification_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/service/repository/notification_repository.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +167,63 @@
       <option name="project" value="LOCAL" />
       <updated>1586244799014</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="+base repo">
+      <created>1586264440510</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586264440510</updated>
+    </task>
+    <task id="LOCAL-00017" summary="?">
+      <created>1586264498712</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586264498712</updated>
+    </task>
+    <task id="LOCAL-00018" summary="?">
+      <created>1586264584129</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1586264584129</updated>
+    </task>
+    <task id="LOCAL-00019" summary="+notif repo">
+      <created>1586264633887</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1586264633887</updated>
+    </task>
+    <task id="LOCAL-00020" summary="impling notif repo">
+      <created>1586264649592</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1586264649592</updated>
+    </task>
+    <task id="LOCAL-00021" summary="+method to get unseen data">
+      <created>1586264942988</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1586264942988</updated>
+    </task>
+    <task id="LOCAL-00022" summary="+has seen to dao">
+      <created>1586265095933</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1586265095933</updated>
+    </task>
+    <task id="LOCAL-00023" summary="changing fetch api response type">
+      <created>1586265446573</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1586265446573</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +231,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -200,6 +255,13 @@
     <MESSAGE value="-" />
     <MESSAGE value="+api for notifications" />
     <MESSAGE value="+seen bool" />
-    <option name="LAST_COMMIT_MESSAGE" value="+seen bool" />
+    <MESSAGE value="+base repo" />
+    <MESSAGE value="?" />
+    <MESSAGE value="+notif repo" />
+    <MESSAGE value="impling notif repo" />
+    <MESSAGE value="+method to get unseen data" />
+    <MESSAGE value="+has seen to dao" />
+    <MESSAGE value="changing fetch api response type" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing fetch api response type" />
   </component>
 </project>
