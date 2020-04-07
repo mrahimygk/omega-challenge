@@ -175,10 +175,10 @@ class NotificationRepositoryImpl implements NotificationRepository {
   }
 
   @override
-  Future getUpdatedList() async {
+  Future updateNotifications() async {
+    final response = await api.fetchAll(Map<String, dynamic>());
     final db = await databaseProvider.db();
     Batch batch = db.batch();
-    final response = await api.fetchAll(Map<String, dynamic>());
     response.list.forEach((n) {
       batch.insert(notificationTable, dao.toMap(n));
     });
