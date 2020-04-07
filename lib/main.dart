@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:omega/bloc/notification_bloc.dart';
+import 'package:omega/service/db/database_provider.dart';
+import 'package:omega/service/repository/notification_repo_implementation.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,8 +28,47 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final bloc = NotificationBloc();
+  final repo = NotificationRepositoryImpl(DatabaseProvider.get);
+
+  Future getUpdatedNotifications() async {
+    await bloc.updateNotifications();
+    final list = await repo.getUnSeen();
+    if (list.isNotEmpty) {
+      showNotifications();
+    }
+  }
+
+  showNotifications() {
+    showDialog(
+      context: context,
+      builder: (context) => StatefulBuilder(
+        builder: (context, setState) => AlertDialog(
+          title: Text(
+            'اطلاعیه‌ها',
+            textAlign: TextAlign.center,
+          ),
+          actions: <Widget>[
+            FlatButton(
+              child: Text(
+                'بستن',
+                style: TextStyle(color: Colors.red),
+              ),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            )
+          ],
+          content: Text('ccc'),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    getUpdatedNotifications();
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -45,31 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          showDialog(
-            context: context,
-            builder: (context) => StatefulBuilder(
-              builder: (context, setState) => AlertDialog(
-                title: Text(
-                  'اطلاعیه‌ها',
-                  textAlign: TextAlign.center,
-                ),
-                actions: <Widget>[
-                  FlatButton(
-                    child: Text(
-                      'بستن',
-                      style: TextStyle(color: Colors.red),
-                    ),
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                  )
-                ],
-                content: Text('ccc'),
-              ),
-            ),
-          );
-        },
+        onPressed: () {},
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
