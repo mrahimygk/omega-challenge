@@ -35,6 +35,7 @@ class NotificationDao implements Dao<Notification> {
       '$notificationColVoteNumber text, '
       '$notificationColPoId text, '
       '$notificationColPortalId text, '
+      '$notificationHasSeen text, '
       ')';
 
   @override
@@ -70,7 +71,8 @@ class NotificationDao implements Dao<Notification> {
       notificationColVoteTotal: object.voteTotal,
       notificationColVoteNumber: object.voteNumber,
       notificationColPoId: object.poId,
-      notificationColPortalId: object.portalId
+      notificationColPortalId: object.portalId,
+      notificationHasSeen: object.hasSeen,
     };
   }
 
@@ -117,6 +119,7 @@ class NotificationDao implements Dao<Notification> {
       query[notificationColVoteNumber],
       query[notificationColPoId],
       query[notificationColPortalId],
+      query[notificationHasSeen],
   );
 }
 
@@ -152,3 +155,4 @@ const notificationColVoteTotal = 'voteTotal';
 const notificationColVoteNumber = 'voteNumber';
 const notificationColPoId = 'poId';
 const notificationColPortalId = 'portalId';
+const notificationHasSeen = 'hasSeen';
