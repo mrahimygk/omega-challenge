@@ -25,14 +25,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,10 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'You have :',
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
+            Text('Omega Test Project'),
           ],
         ),
       ),
@@ -61,10 +50,16 @@ class _MyHomePageState extends State<MyHomePage> {
             context: context,
             builder: (context) => StatefulBuilder(
               builder: (context, setState) => AlertDialog(
-                title: Text('اطلاعیه‌ها', textAlign: TextAlign.center,),
+                title: Text(
+                  'اطلاعیه‌ها',
+                  textAlign: TextAlign.center,
+                ),
                 actions: <Widget>[
                   FlatButton(
-                    child: Text('بستن', style: TextStyle(color: Colors.red),),
+                    child: Text(
+                      'بستن',
+                      style: TextStyle(color: Colors.red),
+                    ),
                     onPressed: () {
                       Navigator.of(context).pop();
                     },
