@@ -9,7 +9,7 @@ abstract class BaseRepo<T> {
 
   Future delete(T data);
 
-  Future<T> getFromDb();
+  Future<T> getFromDb(String id);
 
   Future<List<T>> getAllFromDb();
 }
