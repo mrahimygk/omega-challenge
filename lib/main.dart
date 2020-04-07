@@ -8,7 +8,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        //
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -36,7 +35,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    //
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -48,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'You have :',
             ),
             Text(
               '$_counter',
@@ -58,7 +56,25 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () {
+          showDialog(
+            context: context,
+            builder: (context) => StatefulBuilder(
+              builder: (context, setState) => AlertDialog(
+                title: Text('اطلاعیه‌ها', textAlign: TextAlign.center,),
+                actions: <Widget>[
+                  FlatButton(
+                    child: Text('بستن', style: TextStyle(color: Colors.red),),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  )
+                ],
+                content: Text('ccc'),
+              ),
+            ),
+          );
+        },
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
