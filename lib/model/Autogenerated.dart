@@ -61,6 +61,7 @@ class Notification {
   int voteNumber;
   int poId;
   String portalId;
+  bool hasSeen;
 
   Notification(
       this.articleId,
@@ -93,7 +94,8 @@ class Notification {
       this.voteTotal,
       this.voteNumber,
       this.poId,
-      this.portalId);
+      this.portalId,
+      this.hasSeen);
 
   Notification.fromJson(Map<String, dynamic> json) {
     articleId = json['ArticleId'];
@@ -134,6 +136,7 @@ class Notification {
     voteNumber = json['VoteNumber'];
     poId = json['PoId'];
     portalId = json['PortalId'];
+    hasSeen = false;
   }
 
   Map<String, dynamic> toJson() {
@@ -174,6 +177,7 @@ class Notification {
     data['VoteNumber'] = this.voteNumber;
     data['PoId'] = this.poId;
     data['PortalId'] = this.portalId;
+    data['hasSeen'] = this.hasSeen;
     return data;
   }
 }
