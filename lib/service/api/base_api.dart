@@ -8,7 +8,7 @@ class BaseApi {
 
   final dio = Dio()..options.baseUrl = _baseUrl;
 
-  Future<dynamic> get(String path, Map<String, dynamic> params) async {
+  Future get(String path, Map<String, dynamic> params) async {
     var responseJson;
     try {
       final response = await dio.get(path, queryParameters: params);
@@ -20,7 +20,7 @@ class BaseApi {
     return responseJson;
   }
 
-  Future<dynamic> post(String path, Map<String, dynamic> params) async {
+  Future post(String path, Map<String, dynamic> params) async {
     var responseJson;
     try {
       final response = await dio.post(path, data: FormData.from(params));
