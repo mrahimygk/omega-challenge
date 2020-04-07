@@ -1,10 +1,11 @@
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
 
 class BaseApi {
-  static final String _baseUrl = "http://mayadin.tehran.ir/DesktopModules/TM_ArticleList/API";
+  static final String _baseUrl =
+      "http://mayadin.tehran.ir/DesktopModules/TM_ArticleList/API";
+
 // /Article/GetList/2766
   final dio = Dio()..options.baseUrl = _baseUrl;
 
@@ -23,8 +24,7 @@ class BaseApi {
   Future<dynamic> post(String path, Map<String, dynamic> params) async {
     var responseJson;
     try {
-      final response =
-      await dio.post(path, data: FormData.from(params));
+      final response = await dio.post(path, data: FormData.from(params));
       responseJson = _returnResponse(response);
     } on SocketException {
       throw Exception('No Internet connection');
