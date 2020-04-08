@@ -177,7 +177,7 @@ class Notification {
     data['VoteNumber'] = this.voteNumber;
     data['PoId'] = this.poId;
     data['PortalId'] = this.portalId;
-    data['hasSeen'] = this.hasSeen;
+    data['hasSeen'] = this.hasSeen.toString();
     return data;
   }
 }
