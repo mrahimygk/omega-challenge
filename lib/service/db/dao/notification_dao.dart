@@ -74,7 +74,7 @@ class NotificationDao implements Dao<Notification> {
       notificationColVoteNumber: object.voteNumber,
       notificationColPoId: object.poId,
       notificationColPortalId: object.portalId,
-      notificationHasSeen: object.hasSeen,
+      notificationHasSeen: object.hasSeen.toString(),
     };
   }
 
@@ -121,7 +121,7 @@ class NotificationDao implements Dao<Notification> {
         query[notificationColVoteNumber],
         query[notificationColPoId],
         query[notificationColPortalId],
-        query[notificationHasSeen],
+        query[notificationHasSeen].toString()=='true',
       );
 }
 
