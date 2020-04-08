@@ -123,7 +123,8 @@ class NotificationRepositoryImpl implements NotificationRepository {
         where: '$notificationHasSeen = ?',
         whereArgs: ['false']);
     if (map.length > 0) {
-      return dao.fromList(map);
+      return dao.fromList(map).where((notification) =>
+          DateTime.parse(notification.expireDate).isAfter(DateTime.now()));
     }
     return null;
   }
@@ -180,7 +181,8 @@ class NotificationRepositoryImpl implements NotificationRepository {
     final db = await databaseProvider.db();
     Batch batch = db.batch();
     response['list'].forEach((n) {
-      batch.insert(notificationTable, dao.toMap(Notification.fromJson(n)), conflictAlgorithm: ConflictAlgorithm.ignore);
+      batch.insert(notificationTable, dao.toMap(Notification.fromJson(n)),
+          conflictAlgorithm: ConflictAlgorithm.ignore);
     });
     await batch.commit(noResult: true);
   }
