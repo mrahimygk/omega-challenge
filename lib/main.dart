@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future getUpdatedNotifications() async {
     await bloc.updateNotifications();
     final list = await repo.getUnSeen();
-    if (list.isNotEmpty) {
+    if (list != null && list.isNotEmpty) {
       showNotifications();
     }
   }
@@ -62,7 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
           content: Text('ccc'),
         ),
       ),
-    );
+    ).whenComplete((){
+      bloc.setSeenAll();
+    });
   }
 
   @override
