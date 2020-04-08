@@ -1,3 +1,5 @@
 build/
 .idea/
 .dart_tool/
+/.idea/
+/.dart_tool/
