@@ -180,7 +180,7 @@ class NotificationRepositoryImpl implements NotificationRepository {
     final db = await databaseProvider.db();
     Batch batch = db.batch();
     response['list'].forEach((n) {
-      batch.insert(notificationTable, n);
+      batch.insert(notificationTable, dao.toMap(Notification.fromJson(n)));
     });
     await batch.commit(noResult: true);
   }
