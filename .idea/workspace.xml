@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bloc/notification_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bloc/notification_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/service/db/dao/notification_dao.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/service/db/dao/notification_dao.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -424,7 +423,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart</url>
-          <line>178</line>
+          <line>177</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
@@ -454,12 +453,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart</url>
-          <line>184</line>
+          <line>183</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart</url>
-          <line>181</line>
+          <line>180</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
@@ -479,7 +478,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart</url>
-          <line>127</line>
+          <line>126</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
@@ -489,7 +488,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/service/repository/notification_repo_implementation.dart</url>
-          <line>182</line>
+          <line>181</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
