@@ -120,11 +120,10 @@ class NotificationRepositoryImpl implements NotificationRepository {
           notificationColPortalId,
           notificationHasSeen
         ],
-        where: '$notificationHasSeen = ?',
+        where: "$notificationHasSeen = ? AND datetime($notificationColExpireDate) > datetime('now')",
         whereArgs: ['false']);
     if (map.length > 0) {
-      return dao.fromList(map).where((notification) =>
-          DateTime.parse(notification.expireDate).isAfter(DateTime.now()));
+      return dao.fromList(map);
     }
     return null;
   }
