@@ -56,6 +56,12 @@
       "languageVersion": "2.1"
     },
     {
+      "name": "csslib",
+      "rootUri": "file:///opt/flutter/.pub-cache/hosted/pub.dartlang.org/csslib-0.15.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///opt/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.3",
       "packageUri": "lib/",
@@ -74,10 +80,22 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_html",
+      "rootUri": "file:///opt/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_html-0.8.2",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///opt/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.2"
+    },
+    {
+      "name": "html",
+      "rootUri": "file:///opt/flutter/.pub-cache/hosted/pub.dartlang.org/html-0.13.4+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "image",
@@ -218,6 +236,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "utf",
+      "rootUri": "file:///opt/flutter/.pub-cache/hosted/pub.dartlang.org/utf-0.9.0+5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///opt/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8",
       "packageUri": "lib/",
@@ -236,7 +260,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-04-08T13:33:21.843835Z",
+  "generated": "2020-04-08T14:22:35.533712Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }
