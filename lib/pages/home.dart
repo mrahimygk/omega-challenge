@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart' hide Notification;
 import 'package:flutter_html/flutter_html.dart';
 import 'package:omega/bloc/notification_bloc.dart';
@@ -83,19 +82,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          //
-          //
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have :',
-            ),
-            Text('Omega Test Project'),
-          ],
-        ),
-      ),
+      body: Center(child: Text('Omega Notification Test Project')),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         tooltip: 'Increment',

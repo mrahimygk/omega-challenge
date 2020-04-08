@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="" />
+    <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home.dart" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,20 +60,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586238559662</updated>
-    </task>
-    <task id="LOCAL-00001" summary="initing a basic flutter project">
-      <created>1586241746788</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1586241746788</updated>
-    </task>
-    <task id="LOCAL-00002" summary="removing comments">
-      <created>1586241999000</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1586241999000</updated>
     </task>
     <task id="LOCAL-00003" summary="converting json data to dart file">
       <created>1586243113724</created>
@@ -401,7 +390,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586355981631</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="separating home">
+      <created>1586356133608</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1586356133608</updated>
+    </task>
+    <task id="LOCAL-00051" summary="-">
+      <created>1586356238990</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1586356238990</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,7 +421,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+notif repo" />
     <MESSAGE value="impling notif repo" />
     <MESSAGE value="+method to get unseen data" />
     <MESSAGE value="+has seen to dao" />
@@ -438,11 +440,12 @@
     <MESSAGE value="db only knows int and string" />
     <MESSAGE value="using dao to map data for sql insert" />
     <MESSAGE value="fixing sql syntax" />
-    <MESSAGE value="-" />
     <MESSAGE value="+list stream" />
     <MESSAGE value="+html deps" />
     <MESSAGE value="+dialog content" />
     <MESSAGE value="/" />
-    <option name="LAST_COMMIT_MESSAGE" value="/" />
+    <MESSAGE value="separating home" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
 </project>
