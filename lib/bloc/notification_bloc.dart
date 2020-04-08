@@ -10,7 +10,7 @@ class NotificationBloc {
       StreamController<List<Notification>>.broadcast();
 
   NotificationBloc() {
-    getNotifications();
+//    getNotifications();
   }
 
   getNotifications() async {
@@ -32,9 +32,17 @@ class NotificationBloc {
     getNotifications();
   }
 
-  setToSeen(Notification notification) async {
+  setSeen(Notification notification) async {
     notification.hasSeen = true;
     await repo.update(notification);
+    getNotifications();
+  }
+
+  setSeenAll() async {
+    (await repo.getAllFromDb()).forEach((notification) async {
+      notification.hasSeen = true;
+      await repo.update(notification);
+    });
     getNotifications();
   }
 
