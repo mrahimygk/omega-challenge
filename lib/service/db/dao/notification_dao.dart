@@ -26,9 +26,9 @@ class NotificationDao implements Dao<Notification> {
       '$notificationColShamsiLastViewDate text, '
       '$notificationColCreateByUser text, '
       '$notificationColApprovedByUser text, '
-      '$notificationColExtraFieldValues text, '
+//      '$notificationColExtraFieldValues text, '
       '$notificationColRelatedUrl text, '
-      '$notificationColCategory text, '
+//      '$notificationColCategory text, '
       '$notificationColCategoryName text, '
       '$notificationColImageUrl text, '
       '$notificationColVoteTotal text, '
@@ -63,9 +63,11 @@ class NotificationDao implements Dao<Notification> {
       notificationColShamsiLastViewDate: object.shamsiLastViewDate,
       notificationColCreateByUser: object.createByUser,
       notificationColApprovedByUser: object.approvedByUser,
-      notificationColExtraFieldValues: object.extraFieldValues,
+//      notificationColExtraFieldValues: object.extraFieldValues.map((fv) {
+//        fv.toJson();
+//      }).toList().toString(),
       notificationColRelatedUrl: object.relatedUrl,
-      notificationColCategory: object.category,
+//      notificationColCategory: object.category,
       notificationColCategoryName: object.categoryName,
       notificationColImageUrl: object.imageUrl,
       notificationColVoteTotal: object.voteTotal,
@@ -87,40 +89,40 @@ class NotificationDao implements Dao<Notification> {
   }
 
   @override
-  Notification fromMap(Map<String, dynamic> query)=> Notification(
-      query[notificationColArticleId],
-      query[notificationColTitle],
-      query[notificationColContent],
-      query[notificationColDescription],
-      query[notificationColUrl],
-      query[notificationColUserDisplayName],
-      query[notificationColShortDescriptionLenght],
-      query[notificationColShortTitleLenght],
-      query[notificationColPublishDate],
-      query[notificationColCreateDate],
-      query[notificationColApprovedDate],
-      query[notificationColExpireDate],
-      query[notificationColUpdateDate],
-      query[notificationColLastViewDate],
-      query[notificationColShamsiPublishDate],
-      query[notificationColShamsiCreateDate],
-      query[notificationColShamsiApprovedDate],
-      query[notificationColShamsiExpireDate],
-      query[notificationColShamsiUpdateDate],
-      query[notificationColShamsiLastViewDate],
-      query[notificationColCreateByUser],
-      query[notificationColApprovedByUser],
-      query[notificationColExtraFieldValues],
-      query[notificationColRelatedUrl],
-      query[notificationColCategory],
-      query[notificationColCategoryName],
-      query[notificationColImageUrl],
-      query[notificationColVoteTotal],
-      query[notificationColVoteNumber],
-      query[notificationColPoId],
-      query[notificationColPortalId],
-      query[notificationHasSeen],
-  );
+  Notification fromMap(Map<String, dynamic> query) => Notification(
+        query[notificationColArticleId],
+        query[notificationColTitle],
+        query[notificationColContent],
+        query[notificationColDescription],
+        query[notificationColUrl],
+        query[notificationColUserDisplayName],
+        query[notificationColShortDescriptionLenght],
+        query[notificationColShortTitleLenght],
+        query[notificationColPublishDate],
+        query[notificationColCreateDate],
+        query[notificationColApprovedDate],
+        query[notificationColExpireDate],
+        query[notificationColUpdateDate],
+        query[notificationColLastViewDate],
+        query[notificationColShamsiPublishDate],
+        query[notificationColShamsiCreateDate],
+        query[notificationColShamsiApprovedDate],
+        query[notificationColShamsiExpireDate],
+        query[notificationColShamsiUpdateDate],
+        query[notificationColShamsiLastViewDate],
+        query[notificationColCreateByUser],
+        query[notificationColApprovedByUser],
+//        query[notificationColExtraFieldValues],
+        query[notificationColRelatedUrl],
+//        query[notificationColCategory],
+        query[notificationColCategoryName],
+        query[notificationColImageUrl],
+        query[notificationColVoteTotal],
+        query[notificationColVoteNumber],
+        query[notificationColPoId],
+        query[notificationColPortalId],
+        query[notificationHasSeen],
+      );
 }
 
 const notificationTable = 'notification';
@@ -146,9 +148,9 @@ const notificationColShamsiUpdateDate = 'shamsiUpdateDate';
 const notificationColShamsiLastViewDate = 'shamsiLastViewDate';
 const notificationColCreateByUser = 'createByUser';
 const notificationColApprovedByUser = 'approvedByUser';
-const notificationColExtraFieldValues = 'extraFieldValues';
+//const notificationColExtraFieldValues = 'extraFieldValues';
 const notificationColRelatedUrl = 'relatedUrl';
-const notificationColCategory = 'category';
+//const notificationColCategory = 'category';
 const notificationColCategoryName = 'categoryName';
 const notificationColImageUrl = 'imageUrl';
 const notificationColVoteTotal = 'voteTotal';
