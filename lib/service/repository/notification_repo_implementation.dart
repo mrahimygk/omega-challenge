@@ -18,7 +18,7 @@ class NotificationRepositoryImpl implements NotificationRepository {
   Future insert(Notification data) async {
     final db = await databaseProvider.db();
     await db.insert(notificationTable, dao.toMap(data),
-        conflictAlgorithm: ConflictAlgorithm.replace);
+        conflictAlgorithm: ConflictAlgorithm.ignore);
   }
 
   @override
@@ -180,7 +180,7 @@ class NotificationRepositoryImpl implements NotificationRepository {
     final db = await databaseProvider.db();
     Batch batch = db.batch();
     response['list'].forEach((n) {
-      batch.insert(notificationTable, dao.toMap(Notification.fromJson(n)));
+      batch.insert(notificationTable, dao.toMap(Notification.fromJson(n)), conflictAlgorithm: ConflictAlgorithm.ignore);
     });
     await batch.commit(noResult: true);
   }
