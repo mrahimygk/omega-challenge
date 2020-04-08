@@ -33,8 +33,8 @@ class Notification {
   int articleId;
   String title;
   String content;
-  Null description;
-  Null url;
+  String description;
+  String url;
   String userDisplayName;
   int shortDescriptionLenght;
   int shortTitleLenght;
@@ -52,11 +52,11 @@ class Notification {
   String shamsiLastViewDate;
   String createByUser;
   String approvedByUser;
-  List<ExtraFieldValues> extraFieldValues;
-  Null relatedUrl;
-  Category category;
+//  List<ExtraFieldValues> extraFieldValues;
+  String relatedUrl;
+//  Category category;
   String categoryName;
-  Null imageUrl;
+  String imageUrl;
   int voteTotal;
   int voteNumber;
   int poId;
@@ -86,9 +86,9 @@ class Notification {
       this.shamsiLastViewDate,
       this.createByUser,
       this.approvedByUser,
-      this.extraFieldValues,
+//      this.extraFieldValues,
       this.relatedUrl,
-      this.category,
+//      this.category,
       this.categoryName,
       this.imageUrl,
       this.voteTotal,
@@ -120,16 +120,16 @@ class Notification {
     shamsiLastViewDate = json['ShamsiLastViewDate'];
     createByUser = json['CreateByUser'];
     approvedByUser = json['ApprovedByUser'];
-    if (json['ExtraFieldValues'] != null) {
-      extraFieldValues = new List<ExtraFieldValues>();
-      json['ExtraFieldValues'].forEach((v) {
-        extraFieldValues.add(new ExtraFieldValues.fromJson(v));
-      });
-    }
+//    if (json['ExtraFieldValues'] != null) {
+//      extraFieldValues = new List<ExtraFieldValues>();
+//      json['ExtraFieldValues'].forEach((v) {
+//        extraFieldValues.add(new ExtraFieldValues.fromJson(v));
+//      });
+//    }
     relatedUrl = json['RelatedUrl'];
-    category = json['Category'] != null
-        ? new Category.fromJson(json['Category'])
-        : null;
+//    category = json['Category'] != null
+//        ? new Category.fromJson(json['Category'])
+//        : null;
     categoryName = json['CategoryName'];
     imageUrl = json['ImageUrl'];
     voteTotal = json['VoteTotal'];
@@ -163,14 +163,14 @@ class Notification {
     data['ShamsiLastViewDate'] = this.shamsiLastViewDate;
     data['CreateByUser'] = this.createByUser;
     data['ApprovedByUser'] = this.approvedByUser;
-    if (this.extraFieldValues != null) {
-      data['ExtraFieldValues'] =
-          this.extraFieldValues.map((v) => v.toJson()).toList();
-    }
+//    if (this.extraFieldValues != null) {
+//      data['ExtraFieldValues'] =
+//          this.extraFieldValues.map((v) => v.toJson()).toList();
+//    }
     data['RelatedUrl'] = this.relatedUrl;
-    if (this.category != null) {
-      data['Category'] = this.category.toJson();
-    }
+//    if (this.category != null) {
+//      data['Category'] = this.category.toJson();
+//    }
     data['CategoryName'] = this.categoryName;
     data['ImageUrl'] = this.imageUrl;
     data['VoteTotal'] = this.voteTotal;
