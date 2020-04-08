@@ -26,6 +26,7 @@ dependencies:
   sqflite: any
   dio: ^2.1.4
   path_provider: ^1.6.5
+  flutter_html: ^0.8.2
 
 dev_dependencies:
   flutter_test:
