@@ -63,9 +63,9 @@ class NotificationRepositoryImpl implements NotificationRepository {
           notificationColShamsiLastViewDate,
           notificationColCreateByUser,
           notificationColApprovedByUser,
-          notificationColExtraFieldValues,
+//          notificationColExtraFieldValues,
           notificationColRelatedUrl,
-          notificationColCategory,
+//          notificationColCategory,
           notificationColCategoryName,
           notificationColImageUrl,
           notificationColVoteTotal,
@@ -109,9 +109,9 @@ class NotificationRepositoryImpl implements NotificationRepository {
           notificationColShamsiLastViewDate,
           notificationColCreateByUser,
           notificationColApprovedByUser,
-          notificationColExtraFieldValues,
+//          notificationColExtraFieldValues,
           notificationColRelatedUrl,
-          notificationColCategory,
+//          notificationColCategory,
           notificationColCategoryName,
           notificationColImageUrl,
           notificationColVoteTotal,
@@ -156,9 +156,9 @@ class NotificationRepositoryImpl implements NotificationRepository {
         notificationColShamsiLastViewDate,
         notificationColCreateByUser,
         notificationColApprovedByUser,
-        notificationColExtraFieldValues,
+//        notificationColExtraFieldValues,
         notificationColRelatedUrl,
-        notificationColCategory,
+//        notificationColCategory,
         notificationColCategoryName,
         notificationColImageUrl,
         notificationColVoteTotal,
@@ -179,8 +179,8 @@ class NotificationRepositoryImpl implements NotificationRepository {
     final response = await api.fetchAll(Map<String, dynamic>());
     final db = await databaseProvider.db();
     Batch batch = db.batch();
-    response.list.forEach((n) {
-      batch.insert(notificationTable, dao.toMap(n));
+    response['list'].forEach((n) {
+      batch.insert(notificationTable, n);
     });
     await batch.commit(noResult: true);
   }
