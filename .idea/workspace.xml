@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bloc/notification_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bloc/notification_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="c1d922cb-7dc6-49e5-a664-5b9be699e9e0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,7 +373,35 @@
       <option name="project" value="LOCAL" />
       <updated>1586353588841</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="+list stream">
+      <created>1586355942762</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1586355942762</updated>
+    </task>
+    <task id="LOCAL-00047" summary="+html deps">
+      <created>1586355953622</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1586355953622</updated>
+    </task>
+    <task id="LOCAL-00048" summary="+dialog content">
+      <created>1586355969766</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1586355969766</updated>
+    </task>
+    <task id="LOCAL-00049" summary="/">
+      <created>1586355981631</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1586355981631</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -398,10 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+api for notifications" />
-    <MESSAGE value="+seen bool" />
-    <MESSAGE value="+base repo" />
-    <MESSAGE value="?" />
     <MESSAGE value="+notif repo" />
     <MESSAGE value="impling notif repo" />
     <MESSAGE value="+method to get unseen data" />
@@ -423,6 +439,10 @@
     <MESSAGE value="using dao to map data for sql insert" />
     <MESSAGE value="fixing sql syntax" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="+list stream" />
+    <MESSAGE value="+html deps" />
+    <MESSAGE value="+dialog content" />
+    <MESSAGE value="/" />
+    <option name="LAST_COMMIT_MESSAGE" value="/" />
   </component>
 </project>
