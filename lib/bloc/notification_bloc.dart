@@ -9,6 +9,8 @@ class NotificationBloc {
   final notificationController =
       StreamController<List<Notification>>.broadcast();
 
+  get list => notificationController.stream;
+
   NotificationBloc() {
 //    getNotifications();
   }
