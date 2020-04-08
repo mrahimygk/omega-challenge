@@ -4,7 +4,7 @@ import 'package:omega/service/db/dao/dao.dart';
 class NotificationDao implements Dao<Notification> {
   @override
   String get createTableQuery => 'create table $notificationTable ('
-      '$notificationColArticleId num, '
+      '$notificationColArticleId num primary key, '
       '$notificationColTitle text, '
       '$notificationColContent text, '
       '$notificationColDescription text, '
